@@ -6,30 +6,41 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		CEBC2D5A2EE169E600CBD18A /* ChatDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEBC2D472EE169E600CBD18A /* ChatDetail.storyboard */; };
+		CEBC2D5B2EE169E600CBD18A /* ChatListView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEBC2D4D2EE169E600CBD18A /* ChatListView.storyboard */; };
+		CEBC2D5C2EE169E600CBD18A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEBC2D542EE169E600CBD18A /* Assets.xcassets */; };
+		CEBC2D5F2EE169E600CBD18A /* ChatDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBC2D482EE169E600CBD18A /* ChatDetailModel.swift */; };
+		CEBC2D602EE169E600CBD18A /* ChatDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBC2D492EE169E600CBD18A /* ChatDetailViewController.swift */; };
+		CEBC2D612EE169E600CBD18A /* ChatDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBC2D4A2EE169E600CBD18A /* ChatDetailViewModel.swift */; };
+		CEBC2D622EE169E600CBD18A /* ChatListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBC2D4C2EE169E600CBD18A /* ChatListModel.swift */; };
+		CEBC2D632EE169E600CBD18A /* ChatListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBC2D4E2EE169E600CBD18A /* ChatListViewController.swift */; };
+		CEBC2D642EE169E600CBD18A /* ChatListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBC2D4F2EE169E600CBD18A /* ChatListViewModel.swift */; };
+		CEBC2D652EE169E600CBD18A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBC2D532EE169E600CBD18A /* AppDelegate.swift */; };
+		CEBC2D662EE169E600CBD18A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBC2D582EE169E600CBD18A /* SceneDelegate.swift */; };
+		CEBC2D702EE16D1100CBD18A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEBC2D6F2EE16D1100CBD18A /* LaunchScreen.storyboard */; };
+		CEBC2D782EE1D89100CBD18A /* ChatListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEBC2D772EE1D89100CBD18A /* ChatListCell.xib */; };
+		CEBC2D792EE1D89100CBD18A /* ChatListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBC2D762EE1D89100CBD18A /* ChatListCell.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		CEBC2D152EE164F300CBD18A /* ChatApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEBC2D472EE169E600CBD18A /* ChatDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChatDetail.storyboard; sourceTree = "<group>"; };
+		CEBC2D482EE169E600CBD18A /* ChatDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatDetailModel.swift; sourceTree = "<group>"; };
+		CEBC2D492EE169E600CBD18A /* ChatDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatDetailViewController.swift; sourceTree = "<group>"; };
+		CEBC2D4A2EE169E600CBD18A /* ChatDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatDetailViewModel.swift; sourceTree = "<group>"; };
+		CEBC2D4C2EE169E600CBD18A /* ChatListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListModel.swift; sourceTree = "<group>"; };
+		CEBC2D4D2EE169E600CBD18A /* ChatListView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChatListView.storyboard; sourceTree = "<group>"; };
+		CEBC2D4E2EE169E600CBD18A /* ChatListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListViewController.swift; sourceTree = "<group>"; };
+		CEBC2D4F2EE169E600CBD18A /* ChatListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListViewModel.swift; sourceTree = "<group>"; };
+		CEBC2D532EE169E600CBD18A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CEBC2D542EE169E600CBD18A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CEBC2D552EE169E600CBD18A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEBC2D582EE169E600CBD18A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CEBC2D6F2EE16D1100CBD18A /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CEBC2D762EE1D89100CBD18A /* ChatListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListCell.swift; sourceTree = "<group>"; };
+		CEBC2D772EE1D89100CBD18A /* ChatListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatListCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		CEBC2D272EE164F400CBD18A /* Exceptions for "ChatApp" folder in "ChatApp" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Info.plist,
-			);
-			target = CEBC2D142EE164F300CBD18A /* ChatApp */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		CEBC2D172EE164F300CBD18A /* ChatApp */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				CEBC2D272EE164F400CBD18A /* Exceptions for "ChatApp" folder in "ChatApp" target */,
-			);
-			path = ChatApp;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		CEBC2D122EE164F300CBD18A /* Frameworks */ = {
@@ -45,7 +56,7 @@
 		CEBC2D0C2EE164F300CBD18A = {
 			isa = PBXGroup;
 			children = (
-				CEBC2D172EE164F300CBD18A /* ChatApp */,
+				CEBC2D592EE169E600CBD18A /* ChatApp */,
 				CEBC2D162EE164F300CBD18A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -56,6 +67,132 @@
 				CEBC2D152EE164F300CBD18A /* ChatApp.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		CEBC2D4B2EE169E600CBD18A /* ChatDetail */ = {
+			isa = PBXGroup;
+			children = (
+				CEBC2D472EE169E600CBD18A /* ChatDetail.storyboard */,
+				CEBC2D6A2EE16A5C00CBD18A /* Services */,
+				CEBC2D692EE16A5500CBD18A /* Model */,
+				CEBC2D682EE16A4C00CBD18A /* ViewModel */,
+				CEBC2D672EE16A3F00CBD18A /* ViewController */,
+			);
+			path = ChatDetail;
+			sourceTree = "<group>";
+		};
+		CEBC2D502EE169E600CBD18A /* ChatList */ = {
+			isa = PBXGroup;
+			children = (
+				CEBC2D4D2EE169E600CBD18A /* ChatListView.storyboard */,
+				CEBC2D712EE18B9F00CBD18A /* Cell */,
+				CEBC2D6E2EE16A9E00CBD18A /* Services */,
+				CEBC2D6D2EE16A9800CBD18A /* Model */,
+				CEBC2D6C2EE16A8C00CBD18A /* ViewModel */,
+				CEBC2D6B2EE16A8100CBD18A /* ViewController */,
+			);
+			path = ChatList;
+			sourceTree = "<group>";
+		};
+		CEBC2D512EE169E600CBD18A /* Login */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		CEBC2D522EE169E600CBD18A /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				CEBC2D4B2EE169E600CBD18A /* ChatDetail */,
+				CEBC2D502EE169E600CBD18A /* ChatList */,
+				CEBC2D512EE169E600CBD18A /* Login */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		CEBC2D592EE169E600CBD18A /* ChatApp */ = {
+			isa = PBXGroup;
+			children = (
+				CEBC2D532EE169E600CBD18A /* AppDelegate.swift */,
+				CEBC2D542EE169E600CBD18A /* Assets.xcassets */,
+				CEBC2D552EE169E600CBD18A /* Info.plist */,
+				CEBC2D6F2EE16D1100CBD18A /* LaunchScreen.storyboard */,
+				CEBC2D582EE169E600CBD18A /* SceneDelegate.swift */,
+				CEBC2D522EE169E600CBD18A /* Scenes */,
+			);
+			path = ChatApp;
+			sourceTree = "<group>";
+		};
+		CEBC2D672EE16A3F00CBD18A /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CEBC2D492EE169E600CBD18A /* ChatDetailViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		CEBC2D682EE16A4C00CBD18A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CEBC2D4A2EE169E600CBD18A /* ChatDetailViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CEBC2D692EE16A5500CBD18A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CEBC2D482EE169E600CBD18A /* ChatDetailModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CEBC2D6A2EE16A5C00CBD18A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		CEBC2D6B2EE16A8100CBD18A /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CEBC2D4E2EE169E600CBD18A /* ChatListViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		CEBC2D6C2EE16A8C00CBD18A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CEBC2D4F2EE169E600CBD18A /* ChatListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CEBC2D6D2EE16A9800CBD18A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CEBC2D4C2EE169E600CBD18A /* ChatListModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CEBC2D6E2EE16A9E00CBD18A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		CEBC2D712EE18B9F00CBD18A /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				CEBC2D762EE1D89100CBD18A /* ChatListCell.swift */,
+				CEBC2D772EE1D89100CBD18A /* ChatListCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -72,9 +209,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				CEBC2D172EE164F300CBD18A /* ChatApp */,
 			);
 			name = ChatApp;
 			packageProductDependencies = (
@@ -122,6 +256,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEBC2D5A2EE169E600CBD18A /* ChatDetail.storyboard in Resources */,
+				CEBC2D702EE16D1100CBD18A /* LaunchScreen.storyboard in Resources */,
+				CEBC2D782EE1D89100CBD18A /* ChatListCell.xib in Resources */,
+				CEBC2D5B2EE169E600CBD18A /* ChatListView.storyboard in Resources */,
+				CEBC2D5C2EE169E600CBD18A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,6 +271,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEBC2D5F2EE169E600CBD18A /* ChatDetailModel.swift in Sources */,
+				CEBC2D602EE169E600CBD18A /* ChatDetailViewController.swift in Sources */,
+				CEBC2D612EE169E600CBD18A /* ChatDetailViewModel.swift in Sources */,
+				CEBC2D792EE1D89100CBD18A /* ChatListCell.swift in Sources */,
+				CEBC2D622EE169E600CBD18A /* ChatListModel.swift in Sources */,
+				CEBC2D632EE169E600CBD18A /* ChatListViewController.swift in Sources */,
+				CEBC2D642EE169E600CBD18A /* ChatListViewModel.swift in Sources */,
+				CEBC2D652EE169E600CBD18A /* AppDelegate.swift in Sources */,
+				CEBC2D662EE169E600CBD18A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,7 +297,6 @@
 				INFOPLIST_FILE = ChatApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -176,7 +323,6 @@
 				INFOPLIST_FILE = ChatApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
