@@ -73,7 +73,6 @@
 			isa = PBXGroup;
 			children = (
 				CEBC2D472EE169E600CBD18A /* ChatDetail.storyboard */,
-				CEBC2D6A2EE16A5C00CBD18A /* Services */,
 				CEBC2D692EE16A5500CBD18A /* Model */,
 				CEBC2D682EE16A4C00CBD18A /* ViewModel */,
 				CEBC2D672EE16A3F00CBD18A /* ViewController */,
@@ -86,7 +85,6 @@
 			children = (
 				CEBC2D4D2EE169E600CBD18A /* ChatListView.storyboard */,
 				CEBC2D712EE18B9F00CBD18A /* Cell */,
-				CEBC2D6E2EE16A9E00CBD18A /* Services */,
 				CEBC2D6D2EE16A9800CBD18A /* Model */,
 				CEBC2D6C2EE16A8C00CBD18A /* ViewModel */,
 				CEBC2D6B2EE16A8100CBD18A /* ViewController */,
@@ -94,19 +92,11 @@
 			path = ChatList;
 			sourceTree = "<group>";
 		};
-		CEBC2D512EE169E600CBD18A /* Login */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Login;
-			sourceTree = "<group>";
-		};
 		CEBC2D522EE169E600CBD18A /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
 				CEBC2D4B2EE169E600CBD18A /* ChatDetail */,
 				CEBC2D502EE169E600CBD18A /* ChatList */,
-				CEBC2D512EE169E600CBD18A /* Login */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -148,13 +138,6 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		CEBC2D6A2EE16A5C00CBD18A /* Services */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Services;
-			sourceTree = "<group>";
-		};
 		CEBC2D6B2EE16A8100CBD18A /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -177,13 +160,6 @@
 				CEBC2D4C2EE169E600CBD18A /* ChatListModel.swift */,
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		CEBC2D6E2EE16A9E00CBD18A /* Services */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Services;
 			sourceTree = "<group>";
 		};
 		CEBC2D712EE18B9F00CBD18A /* Cell */ = {

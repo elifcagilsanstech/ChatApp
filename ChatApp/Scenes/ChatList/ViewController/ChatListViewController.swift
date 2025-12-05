@@ -27,7 +27,14 @@ class ChatListViewController: UIViewController {
         self.title = "Chat List"
         navigationController?.navigationBar.prefersLargeTitles = true
         navigationItem.largeTitleDisplayMode = .always
-        
+        navigationItem.rightBarButtonItem = UIBarButtonItem(
+                barButtonSystemItem: .add,
+                target: self,
+                action: #selector(tappedButton)
+            )
+    }
+    @objc func tappedButton(){
+        print("butona tıklandı")
     }
 }
 extension ChatListViewController : UITableViewDataSource,UITableViewDelegate{
