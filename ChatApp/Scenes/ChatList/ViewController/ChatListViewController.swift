@@ -34,7 +34,15 @@ class ChatListViewController: UIViewController {
             )
     }
     @objc func tappedButton(){
-        print("butona tıklandı")
+        let storyboard = UIStoryboard(name: "UserList", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "UserList")
+        if let sheet = vc.sheetPresentationController {
+            sheet.detents = [.large()]
+            sheet.prefersGrabberVisible = true
+        }
+
+        present(vc, animated: true)
+        
     }
 }
 extension ChatListViewController : UITableViewDataSource,UITableViewDelegate{

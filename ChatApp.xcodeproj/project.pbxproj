@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE773A302EE4E82300240296 /* UserList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE773A2F2EE4E82300240296 /* UserList.storyboard */; };
+		CE773A352EE4E89D00240296 /* UserListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE773A342EE4E89D00240296 /* UserListViewController.swift */; };
+		CE773A372EE4E8C100240296 /* UserListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE773A362EE4E8C100240296 /* UserListViewModel.swift */; };
+		CE773A392EE4E8D200240296 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE773A382EE4E8D200240296 /* UserModel.swift */; };
 		CEBC2D5A2EE169E600CBD18A /* ChatDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEBC2D472EE169E600CBD18A /* ChatDetail.storyboard */; };
 		CEBC2D5B2EE169E600CBD18A /* ChatListView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEBC2D4D2EE169E600CBD18A /* ChatListView.storyboard */; };
 		CEBC2D5C2EE169E600CBD18A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEBC2D542EE169E600CBD18A /* Assets.xcassets */; };
@@ -24,6 +28,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE773A2F2EE4E82300240296 /* UserList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UserList.storyboard; sourceTree = "<group>"; };
+		CE773A342EE4E89D00240296 /* UserListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewController.swift; sourceTree = "<group>"; };
+		CE773A362EE4E8C100240296 /* UserListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewModel.swift; sourceTree = "<group>"; };
+		CE773A382EE4E8D200240296 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		CEBC2D152EE164F300CBD18A /* ChatApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEBC2D472EE169E600CBD18A /* ChatDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChatDetail.storyboard; sourceTree = "<group>"; };
 		CEBC2D482EE169E600CBD18A /* ChatDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatDetailModel.swift; sourceTree = "<group>"; };
@@ -53,6 +61,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE773A2E2EE4E7EA00240296 /* UserList */ = {
+			isa = PBXGroup;
+			children = (
+				CE773A2F2EE4E82300240296 /* UserList.storyboard */,
+				CE773A332EE4E83500240296 /* ViewController */,
+				CE773A322EE4E83000240296 /* ViewModel */,
+				CE773A312EE4E82900240296 /* Model */,
+			);
+			path = UserList;
+			sourceTree = "<group>";
+		};
+		CE773A312EE4E82900240296 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CE773A382EE4E8D200240296 /* UserModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CE773A322EE4E83000240296 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CE773A362EE4E8C100240296 /* UserListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CE773A332EE4E83500240296 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CE773A342EE4E89D00240296 /* UserListViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
 		CEBC2D0C2EE164F300CBD18A = {
 			isa = PBXGroup;
 			children = (
@@ -95,6 +138,7 @@
 		CEBC2D522EE169E600CBD18A /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				CE773A2E2EE4E7EA00240296 /* UserList */,
 				CEBC2D4B2EE169E600CBD18A /* ChatDetail */,
 				CEBC2D502EE169E600CBD18A /* ChatList */,
 			);
@@ -235,6 +279,7 @@
 				CEBC2D5A2EE169E600CBD18A /* ChatDetail.storyboard in Resources */,
 				CEBC2D702EE16D1100CBD18A /* LaunchScreen.storyboard in Resources */,
 				CEBC2D782EE1D89100CBD18A /* ChatListCell.xib in Resources */,
+				CE773A302EE4E82300240296 /* UserList.storyboard in Resources */,
 				CEBC2D5B2EE169E600CBD18A /* ChatListView.storyboard in Resources */,
 				CEBC2D5C2EE169E600CBD18A /* Assets.xcassets in Resources */,
 			);
@@ -248,13 +293,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEBC2D5F2EE169E600CBD18A /* ChatDetailModel.swift in Sources */,
+				CE773A372EE4E8C100240296 /* UserListViewModel.swift in Sources */,
 				CEBC2D602EE169E600CBD18A /* ChatDetailViewController.swift in Sources */,
 				CEBC2D612EE169E600CBD18A /* ChatDetailViewModel.swift in Sources */,
 				CEBC2D792EE1D89100CBD18A /* ChatListCell.swift in Sources */,
 				CEBC2D622EE169E600CBD18A /* ChatListModel.swift in Sources */,
+				CE773A352EE4E89D00240296 /* UserListViewController.swift in Sources */,
 				CEBC2D632EE169E600CBD18A /* ChatListViewController.swift in Sources */,
 				CEBC2D642EE169E600CBD18A /* ChatListViewModel.swift in Sources */,
 				CEBC2D652EE169E600CBD18A /* AppDelegate.swift in Sources */,
+				CE773A392EE4E8D200240296 /* UserModel.swift in Sources */,
 				CEBC2D662EE169E600CBD18A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
