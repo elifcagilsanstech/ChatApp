@@ -60,7 +60,7 @@ extension ChatDetailViewController : UITableViewDelegate,UITableViewDataSource{
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "MessageCell", for: indexPath) as? MessageTableCell else { return UITableViewCell() }
         
-        cell.labelText("Selam nabersinsdfghjklşçölmkjnvkodrkjghvfkplkdoıjfosplckofıkkpsşfojkodıjfvkoıdjrgıottrıugkoldrkgjd")
+        cell.labelText("Selam nabersinsdfghjklşçölmkjnvkodrkjghvfkplkdoıjfosplckofıkkpsşfojkodıjfvkoıdjrgıottrıugkoldrkgjd", isMine: true)
         return cell
     }
     
