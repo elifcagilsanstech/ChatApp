@@ -10,7 +10,6 @@ import UIKit
 class UserListViewController: UIViewController {
 
     @IBOutlet weak var searchBar: UISearchBar!
-    
     @IBOutlet weak var tableView: UITableView!
     
     
@@ -25,9 +24,8 @@ class UserListViewController: UIViewController {
         tableView.register(UINib(nibName: "ChatListCell", bundle: nil), forCellReuseIdentifier: "ChatCell")
 
     }
-    
-
 }
+
 extension UserListViewController : UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 20

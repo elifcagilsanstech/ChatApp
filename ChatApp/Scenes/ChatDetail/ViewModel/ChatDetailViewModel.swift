@@ -6,3 +6,11 @@
 //
 
 import Foundation
+
+struct ChatDetailViewModel {
+    
+    let messageText : String
+    let messageTime : TimeInterval
+    
+    
+}
