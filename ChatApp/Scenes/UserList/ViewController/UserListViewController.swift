@@ -48,4 +48,10 @@ extension UserListViewController : UITableViewDelegate, UITableViewDataSource{
         return 80
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: false)
+        let storyboard = UIStoryboard(name: "ChatDetail", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "ChatDetail") as! ChatDetailViewController        
+        navigationController?.pushViewController(vc, animated: false)
+    }
 }

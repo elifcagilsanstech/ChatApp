@@ -36,12 +36,14 @@ class ChatListViewController: UIViewController {
     @objc func tappedButton(){
         let storyboard = UIStoryboard(name: "UserList", bundle: nil)
         let vc = storyboard.instantiateViewController(withIdentifier: "UserList")
-        if let sheet = vc.sheetPresentationController {
+        let nav = UINavigationController(rootViewController: vc)
+
+        if let sheet = nav.sheetPresentationController {
             sheet.detents = [.large()]
             sheet.prefersGrabberVisible = true
         }
 
-        present(vc, animated: true)
+        present(nav, animated: true)
         
     }
 }
@@ -61,5 +63,13 @@ extension ChatListViewController : UITableViewDataSource,UITableViewDelegate{
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 80
+    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: false)
+        let storyboard = UIStoryboard(name: "ChatDetail", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "ChatDetail") as! ChatDetailViewController
+        vc.modalPresentationStyle = .fullScreen
+        navigationController?.pushViewController(vc, animated: false
+        )
     }
 }
