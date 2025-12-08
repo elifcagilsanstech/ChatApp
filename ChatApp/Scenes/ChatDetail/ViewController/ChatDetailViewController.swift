@@ -19,14 +19,14 @@ class ChatDetailViewController: UIViewController {
         super.viewDidLoad()
         setNavbar()
         setUpTableView()
-
+        
     }
     
     func setUpTableView(){
         tableView.delegate = self
         tableView.dataSource = self
         tableView.register(UINib(nibName: "MessageTableCell", bundle: nil),forCellReuseIdentifier: "MessageCell")
-       
+        
     }
     
     func setNavbar(){
@@ -38,7 +38,7 @@ class ChatDetailViewController: UIViewController {
             target: self,
             action: #selector(handleback)
         )
-
+        
         navigationItem.leftBarButtonItem = backButton
     }
     
@@ -59,9 +59,9 @@ extension ChatDetailViewController : UITableViewDelegate,UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "MessageCell", for: indexPath) as? MessageTableCell else { return UITableViewCell() }
-
-        cell.labelText("Selam nabersin")
-            return cell
-        }
         
+        cell.labelText("Selam nabersinsdfghjklşçölmkjnvkodrkjghvfkplkdoıjfosplckofıkkpsşfojkodıjfvkoıdjrgıottrıugkoldrkgjd")
+        return cell
     }
+    
+}

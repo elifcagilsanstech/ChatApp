@@ -7,12 +7,18 @@
 
 import UIKit
 
-class UserListViewController: UIViewController {
 
+
+protocol UserListViewControllerDelegate: AnyObject {
+    func tappedUser(_ userId: String)
+}
+
+class UserListViewController: UIViewController {
+    
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var tableView: UITableView!
     
-    
+    weak var delegate : UserListViewControllerDelegate?
     override func viewDidLoad() {
         super.viewDidLoad()
         setupTableView()
@@ -22,7 +28,7 @@ class UserListViewController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         tableView.register(UINib(nibName: "ChatListCell", bundle: nil), forCellReuseIdentifier: "ChatCell")
-
+        
     }
 }
 
@@ -48,8 +54,10 @@ extension UserListViewController : UITableViewDelegate, UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: false)
-        let storyboard = UIStoryboard(name: "ChatDetail", bundle: nil)
-        let vc = storyboard.instantiateViewController(withIdentifier: "ChatDetail") as! ChatDetailViewController        
-        navigationController?.pushViewController(vc, animated: false)
+        dismiss(animated: true, completion: { [ weak self ] in
+            guard let self = self else {return}
+            delegate?.tappedUser("5")
+            
+        })
     }
 }

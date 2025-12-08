@@ -17,6 +17,7 @@ class ChatListViewController: UIViewController {
         tableViewSetup()
         navbarSetup()
     }
+    
     func tableViewSetup(){
         tableView.delegate = self
         tableView.dataSource = self
@@ -29,23 +30,22 @@ class ChatListViewController: UIViewController {
         navigationController?.navigationBar.prefersLargeTitles = true
         navigationItem.largeTitleDisplayMode = .always
         navigationItem.rightBarButtonItem = UIBarButtonItem(
-                barButtonSystemItem: .add,
-                target: self,
-                action: #selector(tappedButton)
-            )
+            barButtonSystemItem: .add,
+            target: self,
+            action: #selector(tappedButton)
+        )
     }
+    
     @objc func tappedButton(){
         let storyboard = UIStoryboard(name: "UserList", bundle: nil)
-        let vc = storyboard.instantiateViewController(withIdentifier: "UserList")
-        let nav = UINavigationController(rootViewController: vc)
-
-        if let sheet = nav.sheetPresentationController {
-            sheet.detents = [.large()]
-            sheet.prefersGrabberVisible = true
+        if let vc = storyboard.instantiateViewController(withIdentifier: "UserList") as? UserListViewController {
+            vc.delegate = self
+            if let sheet = vc.sheetPresentationController {
+                sheet.detents = [.large()]
+                sheet.prefersGrabberVisible = true
+            }
+            present(vc, animated: true)
         }
-
-        present(nav, animated: true)
-        
     }
 }
 extension ChatListViewController : UITableViewDataSource,UITableViewDelegate{
@@ -62,15 +62,21 @@ extension ChatListViewController : UITableViewDataSource,UITableViewDelegate{
         
         return cell
     }
+    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 80
     }
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: false)
+        tappedUser("5")
+    }
+}
+
+extension ChatListViewController : UserListViewControllerDelegate {
+    func tappedUser(_ userId: String) {
         let storyboard = UIStoryboard(name: "ChatDetail", bundle: nil)
         let vc = storyboard.instantiateViewController(withIdentifier: "ChatDetail") as! ChatDetailViewController
-        vc.modalPresentationStyle = .fullScreen
-        navigationController?.pushViewController(vc, animated: false
-        )
+        navigationController?.pushViewController(vc, animated: false)
     }
 }
