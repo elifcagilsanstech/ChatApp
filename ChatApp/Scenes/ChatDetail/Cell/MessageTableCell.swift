@@ -41,11 +41,11 @@ class MessageTableCell: UITableViewCell {
         messageLabel.text = text
         
         if isMine {
-            leadingConstraint.constant = self.contentView.bounds.width / 2 - 44
+            leadingConstraint.constant = self.contentView.bounds.width / 2
             leftView.isHidden = true
             messageView.backgroundColor = .systemBlue
         } else {
-            trailingConstraint.constant = self.contentView.bounds.width / 2 + 44
+            trailingConstraint.constant = self.contentView.bounds.width / 2 
             rightView.isHidden = true
             messageView.backgroundColor = .systemRed
         }
@@ -53,7 +53,6 @@ class MessageTableCell: UITableViewCell {
     
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
         
     }
     

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="24412" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23727" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24405"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23721"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -31,6 +31,7 @@
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sv9-7Y-Fh6">
                                                         <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                                        <color key="tintColor" systemColor="systemOrangeColor"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" image="plus" catalog="system"/>
                                                     </button>
@@ -57,7 +58,8 @@
                                                 <rect key="frame" x="333" y="0.0" width="60" height="60"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="frI-uE-ocO">
-                                                        <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                                        <rect key="frame" x="-3" y="0.0" width="60" height="60"/>
+                                                        <color key="tintColor" systemColor="systemOrangeColor"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" image="paperplane.fill" catalog="system"/>
                                                         <connections>
@@ -68,9 +70,9 @@
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="bottom" secondItem="frI-uE-ocO" secondAttribute="bottom" id="D2j-o5-qFA"/>
-                                                    <constraint firstItem="frI-uE-ocO" firstAttribute="leading" secondItem="6Vo-ds-Fo6" secondAttribute="leading" id="G3X-do-Td2"/>
+                                                    <constraint firstItem="frI-uE-ocO" firstAttribute="leading" secondItem="6Vo-ds-Fo6" secondAttribute="leading" constant="-3" id="G3X-do-Td2"/>
                                                     <constraint firstItem="frI-uE-ocO" firstAttribute="top" secondItem="6Vo-ds-Fo6" secondAttribute="top" id="V0G-mB-pOJ"/>
-                                                    <constraint firstAttribute="trailing" secondItem="frI-uE-ocO" secondAttribute="trailing" id="qMv-QF-G8l"/>
+                                                    <constraint firstAttribute="trailing" secondItem="frI-uE-ocO" secondAttribute="trailing" constant="3" id="qMv-QF-G8l"/>
                                                 </constraints>
                                             </view>
                                         </subviews>
@@ -122,6 +124,9 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

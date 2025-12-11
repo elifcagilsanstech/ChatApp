@@ -19,6 +19,7 @@ class ChatDetailViewController: UIViewController {
         super.viewDidLoad()
         setNavbar()
         setUpTableView()
+        setupUI()
         
     }
     
@@ -26,6 +27,16 @@ class ChatDetailViewController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         tableView.register(UINib(nibName: "MessageTableCell", bundle: nil),forCellReuseIdentifier: "MessageCell")
+        
+    }
+    
+    func setupUI(){
+        textView.layer.cornerRadius = 16
+        textView.backgroundColor = .systemGray5
+        textView.layer.borderWidth = 1
+        textView.layer.borderColor = UIColor.systemGray6.cgColor
+        textView.font = UIFont.systemFont(ofSize: 12)
+        textView.textColor = .black
         
     }
     
@@ -59,8 +70,7 @@ extension ChatDetailViewController : UITableViewDelegate,UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "MessageCell", for: indexPath) as? MessageTableCell else { return UITableViewCell() }
-        
-        cell.labelText("Selam nabersinsdfghjklşçölmkjnvkodrkjghvfkplkdoıjfosplckofıkkpsşfojkodıjfvkoıdjrgıottrıugkoldrkgjd", isMine: true)
+        cell.labelText("Selam nabersin", isMine: true)
         return cell
     }
     

@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE66577E2EEB07620056A3F8 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE66577D2EEB07620056A3F8 /* Login.storyboard */; };
+		CE6657802EEB077C0056A3F8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE66577F2EEB077C0056A3F8 /* LoginViewController.swift */; };
+		CE6657822EEB079C0056A3F8 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6657812EEB079C0056A3F8 /* ViewModel.swift */; };
+		CE6657842EEB07A80056A3F8 /* UserLoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6657832EEB07A80056A3F8 /* UserLoginModel.swift */; };
+		CE66578D2EEB07FC0056A3F8 /* Register.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE66578C2EEB07FC0056A3F8 /* Register.storyboard */; };
+		CE66578F2EEB08160056A3F8 /* RegisterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE66578E2EEB08160056A3F8 /* RegisterModel.swift */; };
+		CE6657912EEB08290056A3F8 /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6657902EEB08290056A3F8 /* RegisterViewModel.swift */; };
+		CE6C992A2EEB5578007EA898 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6C99292EEB5578007EA898 /* RegisterViewController.swift */; };
 		CE773A302EE4E82300240296 /* UserList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE773A2F2EE4E82300240296 /* UserList.storyboard */; };
 		CE773A352EE4E89D00240296 /* UserListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE773A342EE4E89D00240296 /* UserListViewController.swift */; };
 		CE773A372EE4E8C100240296 /* UserListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE773A362EE4E8C100240296 /* UserListViewModel.swift */; };
@@ -30,6 +38,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE66577D2EEB07620056A3F8 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		CE66577F2EEB077C0056A3F8 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		CE6657812EEB079C0056A3F8 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		CE6657832EEB07A80056A3F8 /* UserLoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLoginModel.swift; sourceTree = "<group>"; };
+		CE66578C2EEB07FC0056A3F8 /* Register.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Register.storyboard; sourceTree = "<group>"; };
+		CE66578E2EEB08160056A3F8 /* RegisterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterModel.swift; sourceTree = "<group>"; };
+		CE6657902EEB08290056A3F8 /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
+		CE6C99292EEB5578007EA898 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		CE773A2F2EE4E82300240296 /* UserList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UserList.storyboard; sourceTree = "<group>"; };
 		CE773A342EE4E89D00240296 /* UserListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewController.swift; sourceTree = "<group>"; };
 		CE773A362EE4E8C100240296 /* UserListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewModel.swift; sourceTree = "<group>"; };
@@ -65,6 +81,76 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE6657782EEB06DE0056A3F8 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				CE66577D2EEB07620056A3F8 /* Login.storyboard */,
+				CE66577C2EEB07340056A3F8 /* Model */,
+				CE66577B2EEB071E0056A3F8 /* ViewModel */,
+				CE66577A2EEB07170056A3F8 /* ViewController */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		CE6657792EEB06EB0056A3F8 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				CE66578C2EEB07FC0056A3F8 /* Register.storyboard */,
+				CE6657872EEB07C30056A3F8 /* Model */,
+				CE6657862EEB07BC0056A3F8 /* ViewController */,
+				CE6657852EEB07B30056A3F8 /* ViewModel */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		CE66577A2EEB07170056A3F8 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CE66577F2EEB077C0056A3F8 /* LoginViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		CE66577B2EEB071E0056A3F8 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CE6657812EEB079C0056A3F8 /* ViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CE66577C2EEB07340056A3F8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CE6657832EEB07A80056A3F8 /* UserLoginModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CE6657852EEB07B30056A3F8 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CE6657902EEB08290056A3F8 /* RegisterViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CE6657862EEB07BC0056A3F8 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CE6C99292EEB5578007EA898 /* RegisterViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		CE6657872EEB07C30056A3F8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CE66578E2EEB08160056A3F8 /* RegisterModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		CE773A2E2EE4E7EA00240296 /* UserList */ = {
 			isa = PBXGroup;
 			children = (
@@ -152,6 +238,8 @@
 		CEBC2D522EE169E600CBD18A /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				CE6657792EEB06EB0056A3F8 /* Register */,
+				CE6657782EEB06DE0056A3F8 /* Login */,
 				CE773A2E2EE4E7EA00240296 /* UserList */,
 				CEBC2D4B2EE169E600CBD18A /* ChatDetail */,
 				CEBC2D502EE169E600CBD18A /* ChatList */,
@@ -290,10 +378,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE66577E2EEB07620056A3F8 /* Login.storyboard in Resources */,
 				CEBC2D5A2EE169E600CBD18A /* ChatDetail.storyboard in Resources */,
 				CEBC2D702EE16D1100CBD18A /* LaunchScreen.storyboard in Resources */,
 				CEBC2D782EE1D89100CBD18A /* ChatListCell.xib in Resources */,
 				CE773A302EE4E82300240296 /* UserList.storyboard in Resources */,
+				CE66578D2EEB07FC0056A3F8 /* Register.storyboard in Resources */,
 				CEBC2D5B2EE169E600CBD18A /* ChatListView.storyboard in Resources */,
 				CEBC2D5C2EE169E600CBD18A /* Assets.xcassets in Resources */,
 				CE773A402EE6C6DD00240296 /* MessageTableCell.xib in Resources */,
@@ -307,15 +397,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE6657802EEB077C0056A3F8 /* LoginViewController.swift in Sources */,
 				CEBC2D5F2EE169E600CBD18A /* MessageModel.swift in Sources */,
 				CE773A372EE4E8C100240296 /* UserListViewModel.swift in Sources */,
 				CEBC2D602EE169E600CBD18A /* ChatDetailViewController.swift in Sources */,
+				CE6C992A2EEB5578007EA898 /* RegisterViewController.swift in Sources */,
 				CEBC2D612EE169E600CBD18A /* ChatDetailViewModel.swift in Sources */,
 				CE773A3F2EE6C6DD00240296 /* MessageTableCell.swift in Sources */,
 				CEBC2D792EE1D89100CBD18A /* ChatListCell.swift in Sources */,
 				CEBC2D622EE169E600CBD18A /* ChatModel.swift in Sources */,
+				CE6657912EEB08290056A3F8 /* RegisterViewModel.swift in Sources */,
+				CE66578F2EEB08160056A3F8 /* RegisterModel.swift in Sources */,
 				CE773A352EE4E89D00240296 /* UserListViewController.swift in Sources */,
 				CEBC2D632EE169E600CBD18A /* ChatListViewController.swift in Sources */,
+				CE6657842EEB07A80056A3F8 /* UserLoginModel.swift in Sources */,
+				CE6657822EEB079C0056A3F8 /* ViewModel.swift in Sources */,
 				CEBC2D642EE169E600CBD18A /* ChatListViewModel.swift in Sources */,
 				CEBC2D652EE169E600CBD18A /* AppDelegate.swift in Sources */,
 				CE773A392EE4E8D200240296 /* UserModel.swift in Sources */,

@@ -16,6 +16,8 @@ class ChatListViewController: UIViewController {
         super.viewDidLoad()
         tableViewSetup()
         navbarSetup()
+        self.navigationItem.setHidesBackButton(true, animated: false)
+
     }
     
     func tableViewSetup(){

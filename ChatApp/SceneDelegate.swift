@@ -18,8 +18,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
         let window = UIWindow(windowScene: windowScene)
 
-        let storyboard = UIStoryboard(name: "ChatListView", bundle: nil)
-        let mainVC = storyboard.instantiateViewController(withIdentifier: "ChatListViewController")
+        let storyboard = UIStoryboard(name: "Login", bundle: nil)
+        let mainVC = storyboard.instantiateViewController(withIdentifier: "LoginViewController")
 
         let nav = UINavigationController(rootViewController: mainVC)
 
